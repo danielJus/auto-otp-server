@@ -14,6 +14,12 @@ const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require("twilio")(accountSid, authToken);
 const otpCode = "323741";
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "hello",
+  });
+});
+
 app.post("/generate-message", (req, res) => {
   const { appHash } = req.body;
   client.messages
