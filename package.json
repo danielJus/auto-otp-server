@@ -1,0 +1,25 @@
+{
+  "name": "auto-otp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "dev": "nodemon ./src/app.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "twilio": "^3.57.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  }
+}
